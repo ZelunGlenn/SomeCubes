@@ -3,3 +3,6 @@
 transformObjects004/package-lock.json
 .DS_Store
 transformObjects004/static/.gitkeep
+Animation005/static/.gitkeep
+/Animation005/node_modules
+Animation005/package-lock.json

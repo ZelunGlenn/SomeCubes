@@ -77,8 +77,8 @@ group.add(body)
 
 
 //AxesHelper
-const AxesHelper = new THREE.AxesHelper(2)
-scene.add(AxesHelper)
+// const AxesHelper = new THREE.AxesHelper(2)
+// scene.add(AxesHelper)
 
 /**
  * Sizes

@@ -6,3 +6,6 @@ transformObjects004/static/.gitkeep
 Animation005/static/.gitkeep
 /Animation005/node_modules
 Animation005/package-lock.json
+/camera006/node_modules
+camera006/package-lock.json
+camera006/static/.gitkeep

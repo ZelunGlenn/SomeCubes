@@ -9,3 +9,6 @@ Animation005/package-lock.json
 /camera006/node_modules
 camera006/package-lock.json
 camera006/static/.gitkeep
+/FullscreenResizing/node_modules
+FullscreenResizing/package-lock.json
+FullscreenResizing/static/.gitkeep

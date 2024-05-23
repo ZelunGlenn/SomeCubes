@@ -22,9 +22,44 @@ scene.add(mesh)
  * Sizes
  */
 const sizes = {
-    width: 800,
-    height: 600
+    width: innerWidth,
+    height: innerHeight,
 }
+
+window.addEventListener('resize', () => {
+    // update sizes
+    sizes.width = innerWidth
+    sizes.height = innerHeight
+
+    // update camera
+    camera.aspect = sizes.width / sizes.height
+
+    // update matrix
+    camera.updateProjectionMatrix()
+
+    //update render state
+    renderer.setSize(sizes.width, sizes.height)
+
+    // update pixel ratio set
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+})
+
+window.addEventListener('click', () => {
+    const fullscreenElement = document.fullscreenElement || document.webkitFullscreenElement
+    if (!fullscreenElement) {
+        if (canvas.requestFullscreen) {
+            canvas.requestFullscreen()
+        } else if (canvas.webkitRequestFullscreen) {
+            canvas.webkitRequestFullscreen()
+        }
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen()
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen()
+        }
+    }
+})
 
 /**
  * Camera
@@ -45,6 +80,7 @@ const renderer = new THREE.WebGLRenderer({
     canvas: canvas
 })
 renderer.setSize(sizes.width, sizes.height)
+
 
 /**
  * Animate

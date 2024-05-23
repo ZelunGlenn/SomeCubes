@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+// unable trackpad scroll beong limit
+html,
+body {
+  overflow: hidden;
+}
+
+// remove scroll bar
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  // remove blue outline
+  outline: none;
+}
+
+

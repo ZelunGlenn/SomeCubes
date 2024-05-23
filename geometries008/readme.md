@@ -1,5 +1,8 @@
 Geometries
 
+![Geometries 2](https://github.com/ZelunGlenn/SomeCubes/assets/121286574/dd2430c8-41b0-46c8-ae4d-7efb000c28f9)
+
+
 Segement:
 * default 1 so the a flat square surface will have 1 line cross it, etc.
 

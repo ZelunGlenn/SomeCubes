@@ -1,16 +1,3 @@
-# Three.js Journey
+resizing screen and fullscreen
 
-## Setup
-Download [Node.js](https://nodejs.org/en/download/).
-Run this followed commands:
-
-``` bash
-# Install dependencies (only the first time)
-npm install
-
-# Run the local server at localhost:8080
-npm run dev
-
-# Build for production in the dist/ directory
-npm run build
-```
+![Resizing and fullscreen](https://github.com/ZelunGlenn/SomeCubes/assets/121286574/785d6ef1-09a0-4ac9-9082-35039b364513)

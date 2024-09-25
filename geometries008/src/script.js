@@ -43,17 +43,24 @@ scene.add(mesh)
 
 // 50 triangles
 const count = 50
+
 const triGeo = new THREE.BufferGeometry()
+
 const positionsArray = new Float32Array(count * 3 * 3) // 50 triangles, 3 vertices, 3 coordinates
+
 for(let i = 0; i < count * 3 * 3; i++) {
     positionsArray[i] = (Math.random() - 0.5) * 4
 }
+
 const positionsAttribute = new THREE.BufferAttribute(positionsArray, 3)
+
 triGeo.setAttribute('position', positionsAttribute)
+
 const triMaterial = new THREE.MeshBasicMaterial({
     color: 0x00ff00,
     wireframe: true
 })
+
 const triMesh = new THREE.Mesh(triGeo, triMaterial)
 scene.add(triMesh)
 

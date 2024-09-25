@@ -40,6 +40,8 @@ const scene = new THREE.Scene()
 // group
 // a simple gun
 const group = new THREE.Group()
+
+
 group.rotation.x = Math.PI * -0.1
 group.scale.z = 0.5
 scene.add(group)
@@ -97,7 +99,7 @@ scene.add(camera)
 
 
 // Camera look at the object center
-// camera.lookAt(mesh.position)
+//camera.lookAt(back.position)
 camera.lookAt(group.position)
 
 /**
